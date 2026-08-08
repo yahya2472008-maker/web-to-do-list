@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro - Desktop App Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bingkai Jendela Aplikasi (Desktop App Window) -->
+    <div class="app-window">
+        <!-- Title Bar -->
+        <div class="window-header">
+            <div class="window-controls">
+                <div class="control-dot dot-close"></div>
+                <div class="control-dot dot-minimize"></div>
+                <div class="control-dot dot-maximize"></div>
+            </div>
+            <div class="window-title">TaskMaster.exe</div>
+            <div style="width: 36px;"></div> <!-- Spacer penyeimbang -->
+        </div>
+
+        <!-- Body Aplikasi -->
+        <div class="app-body">
+            <div class="app-subtitle">Manajer Tugas Harian</div>
+            <h1>Workspace</h1>
+
+            <!-- Form Input -->
+            <div class="input-box">
+                <input type="text" id="taskInput" placeholder="Ketik tugas baru...">
+                <button id="submitBtn" onclick="processTask()">Tambah</button>
+            </div>
+
+            <!-- List Daftar Tugas -->
+            <div class="task-container">
+                <div id="taskList"></div>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="window-footer">
+            <span id="taskStatusCount">Total tugas: 0</span>
+            <span>Status: Aktif</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
